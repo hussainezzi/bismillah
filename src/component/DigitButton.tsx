@@ -14,7 +14,7 @@ onClick: () => void,
 }
 
 // Define the Button componen
-export default function Button({ digit, onClick }: ButtonProps) {
+export default function DigitButton({ digit, onClick }: ButtonProps) {
   return (
 	<button className='bg-grey-800 text-3 rounded-m border-grey-400' onClick={onClick}>
 	  {digit}
