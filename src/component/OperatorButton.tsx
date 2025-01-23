@@ -9,21 +9,21 @@ import React from 'react'
 //  * 
 
 //  * 2. **Props Definition**:
-interface OperatorButtonPropls {
+interface OperatorButtonProps {
 //   *    - Define the props that the `OperatorButton` will accept. These might include:
 //  *      - `operator`: The symbol of the operator (e.g., `+`, `-`, `*`, `/`).
-operator:string,
+operator: string,
 //  *      - `onClick`: A function to handle the button click event.
 //  *
-onClick:()=>void
+onClick: () => void
 }
 
-export default function OperatorButton({ operator, onClick }: OperatorButtonPropls) {
+export default function OperatorButton({ operator, onClick }: OperatorButtonProps) {
   //  * 3. **Button Element**:
   //  *    - Inside the component, create a button element.
   //  *    - Set the button's text to the `operator` prop.
   return (
-	<button className='border-grey-800 border rounded-l text-5' onClick={onClick}>
+	<button value ={`${operator}`} name  ={`${operator}`} className='border-grey-800 border rounded-l text-5' onClick={onClick}>
 	  {operator}
 	</button>
   );
