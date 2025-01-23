@@ -21,13 +21,17 @@ export default function calculator(){
     }
 
     const evaluate = () =>{
-        const equals  = result.evaluate()
+        const equals  = eval(result);
+        setResult(equals);
+
     }
 
 
     return(
 
         <>
+            <   ></>
+
             // 3. Import the DigitButton and OperatorButton components
             <div className='flex flex-col gap-4'>        
             <DigitButton digit={1} onClick={()=>handleClick}></DigitButton>
